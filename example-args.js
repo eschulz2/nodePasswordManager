@@ -4,14 +4,19 @@ var argv = require('yargs')
   		name: {
   			demand: true,
   			alias: 'n',
-  			description: 'First name goes here'
+  			description: 'First name goes here',
+  			type: 'string'
   		},
   		lastname: {
   			demand: true,
   			alias: 'l',
-  			description: 'Last name goes here'
+  			description: 'Last name goes here',
+  			type: 'string'
   		}
   	}).help('help');
+  })
+  .command('get', 'some description', function (yargs){
+  	
   })  
   .help('help')
   .argv;
